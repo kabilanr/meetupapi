@@ -81,7 +81,8 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+import dj_database_url
+DATABASES['default']=dj_database_url.parse("postgres://meetup_l8sb_user:BhAj0pmDiYDYSbcQnbLBmS3DuSMk5Wxp@dpg-cp5ccr779t8c73es0lgg-a.oregon-postgres.render.com/meetup_l8sb")
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
