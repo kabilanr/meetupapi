@@ -1,5 +1,5 @@
 asgiref==3.4.1
-backports.zoneinfo
+
 dj-database-url==2.1.0
 Django==3.2.25
 django-restframework==0.0.1
