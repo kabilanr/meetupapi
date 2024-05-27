@@ -20,12 +20,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-#w*q%b#oh8f$787-&_67ora4cxgh-$dr!a+4fo29mw@8or++)q'
+import os
 
+SECRET_KEY = 'django-insecure-#w*q%b#oh8f$787-&_67ora4cxgh-$dr!a+4fo29mw@8or++)q'
+SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
+DEBUG = 'RENDER' not in os.environ
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://meetupapi.onrender.com/','127.0.0.1:8000']
 
 
 # Application definition
