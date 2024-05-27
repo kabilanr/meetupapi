@@ -24,9 +24,9 @@ import os
 
 SECRET_KEY = 'django-insecure-#w*q%b#oh8f$787-&_67ora4cxgh-$dr!a+4fo29mw@8or++)q'
 SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
-DEBUG = 'RENDER' not in os.environ
+
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['https://meetupapi.onrender.com/','127.0.0.1:8000']
 
