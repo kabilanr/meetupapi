@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['meetupapi.onrender.com']
+ALLOWED_HOSTS = ['meetupapi.onrender.com','https://meetupapi.vercel.app/']
 
 
 # Application definition
